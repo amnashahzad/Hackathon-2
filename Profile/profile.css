@@ -1,0 +1,86 @@
+/* Reset some default styles */
+body, h1, h2, form {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Basic styling for the header */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  /* Styling for the user's profile information */
+  .user-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  #profile-photo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+  }
+  
+  #profile-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Styling for the main content */
+  main {
+    padding: 20px;
+  }
+  
+  .profile-section {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+  }
+  
+  input[type="file"],
+  input[type="text"],
+  input[type="password"],
+  button {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #555;
+  }
+  
+  /* Responsive adjustments */
+  @media screen and (max-width: 600px) {
+    .user-info {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    #profile-photo {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+  

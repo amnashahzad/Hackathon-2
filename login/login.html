@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hakhton</title>
+  <link rel="stylesheet" href="./login.css">
+</head>
+
+<body>
+  <!-- <h1>Personal Dashborad</h1> -->
+  <div class="nav">
+    <!-- <h1 style="font-size: 90%">Personal Dashborad</h1>  -->
+    <li style="font-size: 120%; color: #fff; margin-left: 1%;"> Personal Blogging App</li>
+    <li id="login"><a href="../signup/signup.html">SignUp</a></li>
+  </div>
+  <!-- <hr> -->
+  <div class="head">
+    <h1 style="margin-left: 1%;">Login</h1>
+    <!-- <h1>Signup</h1> -->
+    <form id="signup-form" action="#" method="post">
+      <div class="container">
+        <div class="main" style="margin-left: 10%; width: 80px; ">
+          <div>
+            <!-- <label for="email">Email:</label> -->
+            <input type="email" id="email" name="email" required placeholder="Email"
+              style="width: 400%; border-radius: 6px;">
+          </div>
+          <div>
+            <!-- <label for="password">Password:</label> -->
+            <input type="password" id="password" name="password" required minlength="8"
+              pattern="^(?=.*[a-z])(?=.*[A-Z]).{8,}$" placeholder="Password" style="width: 400%; border-radius: 6px;">
+          </div>
+        </div>
+        <div class="error" id="password-error"></div>
+        <button type="submit" onclick="login()">Login</button>
+      </div>
+    </form>
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-database.js"></script>
+
+  <!-- <script src="./protected.js"></script> -->
+  <script src="../firebase-config.js"></script>
+  <script src="../app.js"></script>
+  <script src="./login.js"></script>
+</body>
+
+</html>

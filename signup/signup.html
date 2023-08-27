@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hakhton</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="nav">
+        <li style="font-size: 120%; color: #fff;margin-left: 1%;">Personal Blogging App</li>
+        <li id="login"><a href="../login/login.html">Login</a></li>
+    </div>
+    <div class="head">
+        <h1 style="margin-left: 1%;">Signup</h1>
+        <form id="signup-form" action="#" method="post">
+            <div class="container">
+                <div class="main" style="margin-left: 10%; width: 80px; ">
+                    <div>
+                        <input type="text" id="userName" name="userName" required minlength="3" maxlength="20"
+                            placeholder="Name" style="width: 400%; border-radius: 6px;">
+                    </div>
+                    <div>
+                        <input type="text" id="lastName" name="lastName" required minlength="1" maxlength="20"
+                            placeholder="Last Name" style="width: 400%; border-radius: 6px;">
+                    </div>
+                    <div>
+                        <input type="email" id="email" name="email" required placeholder="Email"
+                            style="width: 400%; border-radius: 6px;">
+                    </div>
+                    <div>
+                        <input type="password" id="password" name="password" required minlength="8"
+                            pattern="^(?=.*[a-z])(?=.*[A-Z]).{8,}$" placeholder="Password"
+                            style="width: 400%; border-radius: 6px;">
+                    </div>
+                    <div>
+                        <input type="password" id="repeatPassword" name="repeatPassword" required
+                            placeholder="Repeat Password" style="width: 400%; border-radius: 6px;">
+                    </div>
+                </div>
+                <button type="button" onclick="signup()">Sign Up</button>
+            </div>
+        </form>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-database.js"></script>
+    <script src="../firebase-config.js"></script>
+    <script src="../app.js"></script>
+</body>
+</html>

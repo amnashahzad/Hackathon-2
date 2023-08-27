@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saylani Welfare</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="../Images/Frame.png" type="image/x-icon">
+    <link rel="stylesheet" href="./profile.css">
+</head>
+
+<body>
+    <header>
+        <div class="user-info">
+            <div id="profile-photo">
+                <!-- Display profile photo here -->
+            </div>
+            <div id="user-name">
+                <!-- Display user's first and last name here -->
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="profile-section">
+            <h2>Edit Profile</h2>
+            <form id="profile-form">
+                <input type="file" id="photo-input" accept="image/*">
+                <input type="text" id="first-name" placeholder="First Name">
+                <input type="text" id="last-name" placeholder="Last Name">
+                <input type="password" id="password" placeholder="Password">
+                <button type="submit">Save Changes</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-storage.js"></script>
+    <script src="../firebase-config.js"></script>
+    <script src="../app.js"></script>
+    <script src="./product.js"></script>
+    <!-- <script src="./protected.js"></script>  -->
+</body>
+
+</html>

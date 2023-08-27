@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hakhton</title>
+    <link rel="stylesheet" href="./dash.css">
+</head>
+
+<body>
+    <div class="nav">
+        <!-- <h1 style="font-size: 90%">Personal Dashborad</h1>  -->
+        <li style="font-size: 120%; color: #fff;margin-left: 1%;"> Personal Blogging App</li>
+        <li id="userName" style="margin-left: 870px; color: #fff;"></li>
+        <li id="login" onclick="logout()"><a href="">Logout</a></li>
+        <!-- <script src="./protected.js"></script> -->
+    </div>
+    <div class="head">
+        <h1 style="margin-left: 1%; color: black;font-size: 30px; margin-top: 70px;">Dashborad</h1>
+    </div>
+    <br>
+    <div class="container">
+        <!-- <p>Hello, <span id="userFullName"></span>! <button id="logoutBtn">Logout</button></p> -->
+        <div class="blog-form">
+            <!-- <h2>Create a New Blog</h2> -->
+            <form id="blogForm">
+                <!-- <label for="blogTitle">Blog Title (5-50 characters):</label> -->
+                <input type="text" id="blogTitle" name="blogTitle" required minlength="5" maxlength="50"
+                    placeholder="Blog Title">
+                <br>
+                <!-- <label for="blogBody">Blog Body (100-3000 characters):</label> -->
+                <textarea id="blogBody" name="blogBody" required minlength="100" maxlength="3000"
+                    placeholder="What is in your mind"></textarea>
+                <br>
+                <button type="submit" style="background-color: 7749F8;">Publish Blog</button>
+            </form>
+        </div>
+        <!-- <div class="blog-list">
+          <h2>My Blogs</h2>
+          <div id="blogPosts"></div>
+        </div> -->
+    </div>
+    <div class="blog-list">
+        <h2 style="margin-left: 20%;">My Blogs</h2>
+        <br>
+        <div id="blogPosts"></div>
+    </div>
+    <!-- <script src="./protected.js"></script> -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-database.js"></script>
+
+    <!-- <script src="./protected.js"></script> -->
+    <script src="../firebase-config.js"></script>
+    <script src="./dash.js"></script>
+    <script src="./protected.js"></script>
+
+</body>
+
+</html>

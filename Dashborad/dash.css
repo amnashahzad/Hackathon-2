@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.nav {
+    background-color: #9d00ff;
+    width: 100%;
+    height: 50px;
+    padding-top: 20px;
+    position: fixed;
+    top: 0px;
+    display: flex;
+  }
+  
+  li {
+    list-style-type: none;
+  }
+  
+  a {
+    padding-top: 70px;
+    padding-bottom: 8px;
+    padding-left: 40px; /* Adjusted property to control positioning */
+    color: #ffffff;
+    font-size: 120%;
+    text-decoration: none;
+  }
+
+  .head {
+    /* text-align: center; */
+    background-color: white;
+    width: 100%;
+    height: 130px;
+    padding-top: 1px;
+    /* margin-bottom: 40%; */
+  }
+  .head h1{
+    padding-bottom: 2px;
+  }
+
+  /* Reset default margin and padding */
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+} */
+
+p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+#logoutBtn {
+  background-color: #ff5757;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.blog-form {
+  padding: 20px;
+  margin-bottom: 20px;
+  /* border: 1px solid #ccc; */
+  border-radius: 5px;
+}
+
+h2 {
+  /* font-size: 20px;
+  margin-bottom: 10px; */
+}
+
+label {
+  font-size: 14px;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  color: var(--gray-500, #ADB5BD);
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 125% */
+}
+
+button[type="submit"] {
+  background-color: #7749F8;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.blog-list {
+  padding: 20px;
+  /* background-color: #fff; */
+  /* border: 1px solid #ccc; */
+  border-radius: 5px;
+  font-size: 150%;
+}
+
+.blog {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+button.updateBtn,
+button.deleteBtn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+button.deleteBtn {
+  background-color: #ff5757;
+}
+
+.div-post{
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  height: 300px;
+  width: 800px;
+  margin-left: 25%;
+  /* font-size: 70%; */
+}
